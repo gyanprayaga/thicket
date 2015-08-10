@@ -43,6 +43,9 @@ I told you Thicket was simple!
 ####How do I edit the code?
 Just open the folder under /includes/ to access the stylesheets, scripts, and PHP template/controller files that run Thicket. Keep in mind that the stylesheet is a PHP file (disguised as CSS) powered by config.php, so a lot of functionality can be added simply by changing the config file.
 
+####Can I use this for non open-source projects?
+Of course! If you want Thicket for Enterprise, visit http://gyan.biz/thicket and click on the "Build with Thicket" button.
+
 ####It's not working :(
 Hmm... Try looking through the tutorial again. If that doesn't help, check out the detailed overview of Thicket on http://gyan.biz/thicket/ or post a question to the Issues page.
 
@@ -50,9 +53,7 @@ Hmm... Try looking through the tutorial again. If that doesn't help, check out t
 Sure thing! Just open config.php and add the URL to your cdn or relative file path in the corresponding definition.
 
 ```
-//
 define("customStyles","http://cdn.coolsite.com/css/mystylesheet.css"); // instead of changing the defaults, we recommend that you layer on top of Thicket with your own CSS -- just enter the stylesheet URL or relative path here
-//
 ```
 
 ####Why did you use PHP instead of Python or an MVC JavaScript language?
