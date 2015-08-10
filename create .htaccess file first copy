@@ -1,0 +1,17 @@
+Create a .htaccess file (in the main directory of your Thicket installation) and then delete this file (or keep it if you want, it’s up to you ;)
+
+Put this code inside your .htaccess file:
+
+  <IfModule mod_rewrite.c>
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php
+    RewriteRule ^index.php/?(.*)$ $1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php/$1?%{QUERY_STRING} [L]
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
