@@ -7,6 +7,16 @@ Editing pages is easy. Thicket comes pre-loaded with a Home (_home.php), About (
 
 Thicket includes an excellent forum structure, robust login/register form, Disqus comment integration, newsletter sendouts (coming soon!), spam prevention, messaging (still needs work!), and other great features. It's an un-framework, without the clutter or weight of other PHP libraries. You don't have to learn anything - just install it on your web app's home directory and get started!
 
+###Features
+####Zero install
+Just download our package and read the documentation to run Thicket on your site. Or, if you don't want to delve into the code, you can run create a Thicket account and customize your website to your heart's content with our beautiful online dashboard.
+
+####Scalable
+Adding pages is as easy as modifying the views.php file. Change colors, fonts, content, and more from a single config.php file. As your users and posts grow, Thicket grows with it.
+
+####Familiar
+PHP? That's right. It's a familiar language known to millions of people. Now you don't have to worry about paying a premium for development in a relatively obscure language or framework.
+
 ###Before you start
 Create a .htaccess file (in the main directory of your Thicket installation) and then delete this file (or keep it if you want, it’s up to you ;)
 
