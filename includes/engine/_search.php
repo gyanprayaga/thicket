@@ -2,11 +2,13 @@
 			<div class='body--main'>
 				<div class='body--main__nested'  id='state_home'>
 					<section class='content__main'>
-						<p class='content__main__lead'>Welcome to <b class='regular'>Open Source High</b>, the online school where students are the teachers.</p>
+						<?php $search_query = $_GET['q']; ?>
+						<p class='content__main__lead content__main__lead--alt'>Searching for <b class='regular'><? echo $search_query; ?></b> on <?php echo name; ?></p>
 					</section>
 					<section class='content__info'>
-						<div class='content__info__main' id='main'>
-							<?php include_once('_posts.php'); ?>
+						<div class='primary-content-box visible'>
+							<form action='' method='get'><input type="search" value='<? echo $search_query; ?>' class="explore-popup__search search-pane" autofocus placeholder="Search again" name="q"></form>
+							<?php include_once('search.php'); ?>
 						</div>
 					</section>
 				</div>

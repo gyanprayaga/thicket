@@ -1,7 +1,16 @@
+<?php session_start(); 
+	
+	if ($location == 'login') {
+		if ($_SESSION['username']) {
+		header("Location: /");	
+		}	
+	}
+	
+?>
 <html>
 	<head>
 		<title><?php echo($documentTitle); ?> / <?php echo($websiteTitle); ?></title>
-		<link rel='stylesheet' href='<?php echo(url.staticPath); ?>/css/style.css'>
+		<link rel='stylesheet' href='<?php echo(url.staticPath); ?>/css/style.php'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
@@ -20,7 +29,6 @@
 						</div>
 					</section>
 				</div>
-			</div>
-		</div>
+	      	<?php include_once('_footer.php'); ?>
 	</body>
 </html>

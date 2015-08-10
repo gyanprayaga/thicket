@@ -14,8 +14,23 @@ function construct(&$path) {
 	else if ($path == '/create') {
 		createView();
 	}
+	else if (strpos($path,'/posts/') !== false) {
+		postView($path);
+	}
 	else if ($path == '/login') {
 		loginView();
+	}
+	else if ($path == '/search') {
+		searchView();
+	}
+	else if ($path == '/admin/settings') {
+		adminView();
+	}
+	else if ($path == '/admin/dashboard') {
+		adminDashboardView();		
+	}
+	else if ($path == '/logout') {
+		logout();
 	}
 	else {
 		errorView('404 Not Found', errorMessage);
