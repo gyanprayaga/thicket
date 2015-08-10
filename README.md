@@ -12,6 +12,7 @@ Create a .htaccess file (in the main directory of your Thicket installation) and
 
 Put this code inside your .htaccess file:
 
+```
 <IfModule mod_rewrite.c>
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php
 RewriteRule ^index.php/?(.*)$ $1 [R=301,L]
@@ -25,8 +26,9 @@ RewriteRule ^(.*)$ index.php/$1?%{QUERY_STRING} [L]
 Header append Vary: Accept-Encoding
 </FilesMatch>
 </IfModule>
+```
 
 Also, remember to configure your MySQL database information in /includes/engine/config.php so that Thicket can connect to a data source.
 
 ###Configure your database!
-Open http://yoursite.com/includes/engine/modules/db_build.php in your browser after you configure your database information in the previous step. This will automatically build all the tables in your database and create a sample post using SQL queries.
+Open /includes/engine/modules/db_build.php in your browser after you configure your database information in the previous step. This will automatically build all the tables in your database and create a sample post using SQL queries.
