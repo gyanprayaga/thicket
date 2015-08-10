@@ -7,7 +7,7 @@ Editing pages is easy. Thicket comes pre-loaded with a Home (_home.php), About (
 
 Thicket includes an excellent forum structure, robust login/register form, Disqus comment integration, newsletter sendouts (coming soon!), spam prevention, messaging (still needs work!), and other great features. It's an un-framework, without the clutter or weight of other PHP libraries. You don't have to learn anything - just install it on your web app's home directory and get started!
 
-###Before you start!
+###Before you start
 Create a .htaccess file (in the main directory of your Thicket installation) and then delete this file (or keep it if you want, it’s up to you ;)
 
 Put this code inside your .htaccess file:
@@ -30,5 +30,8 @@ Header append Vary: Accept-Encoding
 
 Also, remember to configure your MySQL database information in /includes/engine/config.php so that Thicket can connect to a data source.
 
-###Configure your database!
+###Configure your database
 Open /includes/engine/modules/db_build.php in your browser after you configure your database information in the previous step. This will automatically build all the tables in your database and create a sample post using SQL queries.
+
+###Ready to go
+Now you're all done. Thicket should be running smoothly on your server. If not, create an issue on this repo and we'll try to resolve it ASAP.
