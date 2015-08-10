@@ -35,3 +35,35 @@ Open /includes/engine/modules/db_build.php in your browser after you configure y
 
 ###Ready to go
 Now you're all done. Thicket should be running smoothly on your server. If not, create an issue on this repo and we'll try to resolve it ASAP.
+
+I told you Thicket was simple!
+
+###FAQ
+
+####How do I edit the code?
+Just open the folder under /includes/ to access the stylesheets, scripts, and PHP template/controller files that run Thicket. Keep in mind that the stylesheet is a PHP file (disguised as CSS) powered by config.php, so a lot of functionality can be added simply by changing the config file.
+
+####It's not working :(
+Hmm... Try looking through the tutorial again. If that doesn't help, check out the detailed overview of Thicket on http://gyan.biz/thicket/ or post a question to the Issues page.
+
+####Can I add an external stylesheet?
+Sure thing! Just open config.php and add the URL to your cdn or relative file path in the corresponding definition.
+
+```
+//
+define("customStyles","http://cdn.coolsite.com/css/mystylesheet.css"); // instead of changing the defaults, we recommend that you layer on top of Thicket with your own CSS -- just enter the stylesheet URL or relative path here
+//
+```
+
+####Why did you use PHP instead of Python or an MVC JavaScript language?
+Good question. First, I used PHP because it is accessible and runs a large portion of the web today. More people know PHP that any other back-end scripting language.
+
+There are some great tools like Meteor and other full-stack JavaScript website frameworks. However, I choose to build Thicket with a server-side and front-end piece because it's the most compatible solution, and because it doesn't require significant understanding of new web and programming technologies.
+
+####Why'd you build this?
+I wanted a scalable and robust MVC framework built with PHP which I could easily customize. Thicket is used by teachers to facilitate discussion outside of the classroom, companies to create forums and polls, and Slack communities for building an online counterpart to their chats.
+
+If you found a cool way to use Thicket in your project, post an issue so I can see it :)
+
+####This is great! Can I donate?
+Of course! Just visit http://cash.me/$gyan to donate money directly to Gyan, the guy who built Thicket.
