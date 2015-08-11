@@ -16,9 +16,9 @@ else {
 }
 
 // grabbing the data by POST
-$name = htmlentities($_POST['Title']);
+$name = $_POST['Title'];
 $url = $_POST['Project'];
-$description = htmlentities($_POST['Project_Message']);
+$description = $_POST['Project_Message'];
 $category = $_POST['Category'];
 
 // rand string generator
@@ -39,11 +39,11 @@ if ($name and $url and $description and $category and $logged_in_state) {
 		header("Location: ".url);
 	}
 	else {
-		header("Location: ".url."/create?error=The post could not be added.");	
+		header("Location: /create?error=The post could not be added.");	
 	}
 }
 else {
-	header("Location: ".url."/create?error=Complete all fields before submitting the post.");
+	header("Location: /create?error=Complete all fields before submitting the post.");
 }
 
 

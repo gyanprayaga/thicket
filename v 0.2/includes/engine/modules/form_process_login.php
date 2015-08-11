@@ -14,7 +14,7 @@ $password = $_POST['password'];
 
 // redirect if signed in
 if ($_SESSION['name']) {
-	header("Location: ".url);	
+	header("Location: /");	
 }
 
 // login
@@ -31,16 +31,16 @@ else if ($username and $password) {
 			$_SESSION['upower'] = $therow['power'];
 			$_SESSION['name'] = $therow['username'];
 			$_SESSION['username'] = $therow['email'];
-			header("Location: ".url."/login");		
+			header("Location: /");
 		}
 	}
 	if (!$therow['password']) {
-		header("Location: ".url."/login?error=The username and password do not match.");		
+		header("Location: /login?error=The username and password do not match.");		
 	}
 	
 }
 else {
-	header("Location: ".url."/login?error=Please fill out both fields to login.");
+	header("Location: /login?error=Please fill out both fields to login.");
 }
 
 

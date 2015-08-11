@@ -2,12 +2,12 @@
 			<div class='body--main'>
 				<div class='body--main__nested'  id='state_home'>
 					<section class='content__main'>
-						<p class='content__main__lead content__main__lead--alt'>Build your app quickly with <b class='regular'>Thicket</b>, an ultra-simple PHP MVC</p>
+						<p class='content__main__lead content__main__lead--alt'>Well, this is an interesting About page isn't it?</p>
 					</section>
 					<section class='content__info content__info--team'>
-						<p>Thicket is easy to setup and get going. Just find the config.php file in /includes/engine/ and edit the default parameters to fit your own website.</p>
-						<p>Editing pages is easy. Thicket comes pre-loaded with a Home (_home.php), About (_about.php), Create (_create.php), and Login/Register (_login.php) page. Just find the one you want and edit the HTML to fit your needs. We've also got a barebones stylesheet and some minimal JS functionality (spaghetti JS to get you moving faster, although we recommend refactoring once you push to production), but you can edit that too at /includes/css/style.css and /includes/js/script.js respectively.</p>
-						<p>Thicket includes an excellent forum structure, robust login/register form, Disqus comment integration, newsletter sendouts (coming soon!), spam prevention, messaging (still needs work!), and other great features. It's an un-framework, without the clutter or weight of other PHP libraries. You don't have to learn anything - just install it on your web app's home directory and get started!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget vestibulum tellus, in consectetur dui. Donec dapibus vulputate sem, vitae laoreet ex mattis vitae. Fusce semper feugiat nisi, vel rhoncus libero lobortis non. Nullam id rhoncus diam. Donec cursus iaculis magna et varius. Aenean dignissim, metus sed pharetra venenatis, metus urna pulvinar sem, sit amet pulvinar tellus mi vitae quam. </p>
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quis felis <a href='#'>tempus</a>, sodales massa a, condimentum arcu. Mauris quis imperdiet arcu.</p>
+						<p><b class='regular'>To modify this page, open <b>/includes/engine/_about.php</b> in your code editor.</b></p>
 					</section>
 				</div>
 			</div>

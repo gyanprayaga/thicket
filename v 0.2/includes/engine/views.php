@@ -64,7 +64,7 @@ function adminView() {
 		include_once('_'.$render.'.php');		
 	}
 	else {
-		header("Location: ".url);	
+		header("Location: /");	
 	}
 }
 
@@ -75,13 +75,13 @@ function adminDashboardView() {
 		include_once('_'.$render.'.php');		
 	}
 	else {
-		header("Location: ".url);	
+		header("Location: /");	
 	}
 }
 
 function logout() {
 	session_destroy();
-	header("Location: ".url);	
+	header("Location: /");
 }
 
 function renderHeader($location) {

@@ -25,8 +25,6 @@
 						<div class='content__info__main' id='main'><p class='content__info__paragraph content__info__paragraph--subtitle'><?php echo $p_description; ?></p></div>
 					</section>
 					
-					<?php if (commentingEnabled) {
-					echo "
 					<section class='content__comments'>
 						<header class='content__comments__header'>Discussion</header>
 						<div class='content__comments__content'>
@@ -34,7 +32,7 @@
 							<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
 							<script>
 							   /* * * DON'T EDIT BELOW THIS LINE * * */
-							   disqus_shortname='".disqusShortcode."';
+							   disqus_shortname='opensourcehigh';
 							    (function() {
 							        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 							        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -42,8 +40,7 @@
 							    })();
 	    					</script>
 						</div>
-					</section>";
-					} ?>
+					</section>
 				</div>
 			</div>
 			

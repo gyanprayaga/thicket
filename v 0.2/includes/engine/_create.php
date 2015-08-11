@@ -11,7 +11,7 @@
 						</div>
 					</section>
 					<section class='content__info create_video' id='mail'>
-						<form id='joinform' method="post" action="<?php echo(url.staticPath); ?>/engine/modules/create_process.php"> 
+						<form id='joinform' method="post" action="<?php echo(staticPath); ?>/engine/modules/create_process.php"> 
 				          <div class="left">	
 							<?php if ($error = $_GET['error']) {echo "<p class='text_error' style='color:red;font-weight:400'>$error</p>"; } ?>
 				          <p><label for="name-input">Video Name*</label><input id="name-input" type="text" name="Title" id="Title" autofocus required placeholder="Your video's title"></p>

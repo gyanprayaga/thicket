@@ -21,8 +21,8 @@
 					</section>
 					<section class='content__main content__main--split content__main--right'>
 						<header class='content__main__header'>Register</header>
-						<p class='content__main__paragraph'>This is a demo site, but you can still register to test out the logged-in functionality.</p>			
-						<div id='ga_signup_holder' class='hidden'><p style='color:gray;font-weight:400;font-size:.9em'>Click the button below to register on Thicket with your Google account (won't work if there is no Google Sign-In client API token specified).</p><div id='ga_signup' class='g-signin2' data-width='210' data-height='40' data-longtitle='true' data-onsuccess='onRegister'></div></div>
+						<p class='content__main__paragraph'>Register on Thicket to build your site with our tools and API. It's free, and we don't do anything bad with your private information.</p>			
+						<div id='ga_signup_holder' class='hidden'><p style='color:gray;font-weight:400;font-size:.9em'>Click the button below to register on Thicket with your Google account.</p><div id='ga_signup' class='g-signin2' data-width='210' data-height='40' data-longtitle='true' data-onsuccess='onRegister'></div></div>
 						<p class='content__main__lead'><a href='#register' class='login-intent-switcher'>Create an account</a></p>
 				</div>
 			</div>
