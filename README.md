@@ -1,5 +1,5 @@
 # thicket
-###Build your app quickly with Thicket, an ultra-simple PHP MVC 
+### Build your app quickly with Thicket, an ultra-simple PHP MVC 
 
 Thicket is easy to setup and get going. Just find the config.php file in /includes/engine/ and edit the default parameters to fit your own website. 
 
@@ -7,17 +7,17 @@ Editing pages is easy. Thicket comes pre-loaded with a Home (_home.php), About (
 
 Thicket includes an excellent forum structure, robust login/register form, Disqus comment integration, newsletter sendouts (coming soon!), spam prevention, messaging (still needs work!), and other great features. It's an un-framework, without the clutter or weight of other PHP libraries. You don't have to learn anything - just install it on your web app's home directory and get started!
 
-###Features
-####Zero install
+### Features
+#### Zero install
 Just download our package and read the documentation to run Thicket on your site. Or, if you don't want to delve into the code, you can run create a Thicket account and customize your website to your heart's content with our beautiful online dashboard.
 
-####Scalable
+#### Scalable
 Adding pages is as easy as modifying the views.php file. Change colors, fonts, content, and more from a single config.php file. As your users and posts grow, Thicket grows with it.
 
-####Familiar
+#### Familiar
 PHP? That's right. It's a familiar language known to millions of people. Now you don't have to worry about paying a premium for development in a relatively obscure language or framework.
 
-###Before you start
+### Before you start
 Create a .htaccess file (in the main directory of your Thicket installation) and then delete this file (or keep it if you want, it’s up to you ;)
 
 Put this code inside your .htaccess file:
@@ -40,41 +40,41 @@ Header append Vary: Accept-Encoding
 
 Also, remember to configure your MySQL database information in /includes/engine/config.php so that Thicket can connect to a data source.
 
-###Configure your database
+### Configure your database
 Open /includes/engine/modules/db_build.php in your browser after you configure your database information in the previous step. This will automatically build all the tables in your database and create a sample post using SQL queries.
 
-###Ready to go
+### Ready to go
 Now you're all done. Thicket should be running smoothly on your server. If not, create an issue on this repo and we'll try to resolve it ASAP.
 
 I told you Thicket was simple!
 
-###FAQ
+### FAQ
 
-####How do I edit the code?
+#### How do I edit the code?
 Just open the folder under /includes/ to access the stylesheets, scripts, and PHP template/controller files that run Thicket. Keep in mind that the stylesheet is a PHP file (disguised as CSS) powered by config.php, so a lot of functionality can be added simply by changing the config file.
 
-####Can I use this for non open-source projects?
+#### Can I use this for non open-source projects?
 Of course! If you want Thicket for Enterprise, visit http://gyan.biz/thicket and click on the "Build with Thicket" button.
 
-####It's not working :(
+#### It's not working :(
 Hmm... Try looking through the tutorial again. If that doesn't help, check out the detailed overview of Thicket on http://gyan.biz/thicket/ or post a question to the Issues page.
 
-####Can I add an external stylesheet?
+#### Can I add an external stylesheet?
 Sure thing! Just open config.php and add the URL to your cdn or relative file path in the corresponding definition.
 
 ```
 define("customStyles","http://cdn.coolsite.com/css/mystylesheet.css"); // instead of changing the defaults, we recommend that you layer on top of Thicket with your own CSS -- just enter the stylesheet URL or relative path here
 ```
 
-####Why did you use PHP instead of Python or an MVC JavaScript language?
+#### Why did you use PHP instead of Python or an MVC JavaScript language?
 Good question. First, I used PHP because it is accessible and runs a large portion of the web today. More people know PHP that any other back-end scripting language.
 
 There are some great tools like Meteor and other full-stack JavaScript website frameworks. However, I choose to build Thicket with a server-side and front-end piece because it's the most compatible solution, and because it doesn't require significant understanding of new web and programming technologies.
 
-####Why'd you build this?
+#### Why'd you build this?
 I wanted a scalable and robust MVC framework built with PHP which I could easily customize. Thicket is used by teachers to facilitate discussion outside of the classroom, companies to create forums and polls, and Slack communities for building an online counterpart to their chats.
 
 If you found a cool way to use Thicket in your project, post an issue so I can see it :)
 
-####This is great! Can I donate?
+#### This is great! Can I donate?
 Of course! Just visit http://cash.me/$gyan to donate money directly to Gyan, the guy who built Thicket.
